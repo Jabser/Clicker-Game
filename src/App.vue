@@ -51,4 +51,9 @@ export default {
 body {
   font-family: sans-serif;
 }
+
+#game {
+  width: 768px;
+  margin: 0 auto;
+}
 </style>
