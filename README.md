@@ -1,4 +1,4 @@
-# clicker-game
+# Clicker Game
 
 ## Project setup
 ```
