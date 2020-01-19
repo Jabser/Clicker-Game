@@ -49,6 +49,14 @@ export default new Vuex.Store({
         bps: 1,
         quantity: 0,
         unlocksAt: 2
+      },
+      {
+        name: "Senior Developer",
+        cost: 500,
+        increase: 1.4,
+        bps: 3,
+        quantity: 0,
+        unlocksAt: 3
       }
     ]
   },

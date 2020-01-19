@@ -62,7 +62,7 @@ export default {
       outline: none;
       background: none;
       display: inline-block;
-      min-width: 300px;
+      min-width: 400px;
       padding: 15px 25px;
       background-color: #28A484;
       color: #FFF;
