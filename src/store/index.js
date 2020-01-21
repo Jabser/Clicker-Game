@@ -25,38 +25,115 @@ export default new Vuex.Store({
       increase: 3
     },
     power_ups: [],
+    // upgrades: [
+    //   {
+    //     name: "Intern",
+    //     cost: 50,
+    //     increase: 1.15,
+    //     bps: 0.1,
+    //     quantity: 0,
+    //     unlocksAt: 0
+    //   },
+    //   {
+    //     name: "Junior Developer",
+    //     cost: 100,
+    //     increase: 1.2,
+    //     bps: 0.5,
+    //     quantity: 0,
+    //     unlocksAt: 1
+    //   },
+    //   {
+    //     name: "Web Developer",
+    //     cost: 300,
+    //     increase: 1.4,
+    //     bps: 1,
+    //     quantity: 0,
+    //     unlocksAt: 2
+    //   },
+    //   {
+    //     name: "Senior Developer",
+    //     cost: 500,
+    //     increase: 1.4,
+    //     bps: 3,
+    //     quantity: 0,
+    //     unlocksAt: 3
+    //   }
+    // ],
+
+    // Fantasy Theme
     upgrades: [
       {
-        name: "Intern",
+        logo: "fas fa-shield-alt",
+        name: "Warrior",
         cost: 50,
         increase: 1.15,
-        bps: 0.1,
+        bps: 2,
         quantity: 0,
         unlocksAt: 0
       },
       {
-        name: "Junior Developer",
+        name: "Axemen",
         cost: 100,
         increase: 1.2,
-        bps: 0.5,
+        bps: 4,
         quantity: 0,
         unlocksAt: 1
       },
       {
-        name: "Web Developer",
+        name: "Archer",
         cost: 300,
         increase: 1.4,
-        bps: 1,
+        bps: 8,
         quantity: 0,
         unlocksAt: 2
       },
       {
-        name: "Senior Developer",
+        name: "Knight",
         cost: 500,
         increase: 1.4,
-        bps: 3,
+        bps: 14,
         quantity: 0,
         unlocksAt: 3
+      },
+      {
+        name: "Juggernaut",
+        cost: 700,
+        increase: 1.4,
+        bps: 20,
+        quantity: 0,
+        unlocksAt: 4
+      },
+      {
+        name: "Tower",
+        cost: 1000,
+        increase: 1.4,
+        bps: 35,
+        quantity: 0,
+        unlocksAt: 5
+      },
+      {
+        name: "Minor Fort",
+        cost: 1600,
+        increase: 1.4,
+        bps: 70,
+        quantity: 0,
+        unlocksAt: 6
+      },
+      {
+        name: "Castle",
+        cost: 3000,
+        increase: 1.4,
+        bps: 120,
+        quantity: 0,
+        unlocksAt: 7
+      },
+      {
+        name: "Fortress",
+        cost: 6000,
+        increase: 1.4,
+        bps: 300,
+        quantity: 0,
+        unlocksAt: 8
       }
     ]
   },

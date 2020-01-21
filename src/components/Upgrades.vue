@@ -6,7 +6,7 @@
       class="upgrade"
     >
       <button :class="`button ${upgrade.disabled ? 'disabled' : ''}`" @click="() => buyUpgrade(index)">
-        {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
+        <i :class="upgrade.logo"></i> {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
       </button>
       <div class="details">
         <div class="cost">Cost: {{ upgrade.cost }}</div>
@@ -45,6 +45,10 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 0px -15px 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     .button,
     .cost,
