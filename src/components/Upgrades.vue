@@ -5,7 +5,7 @@
       :key="index" 
       class="upgrade"
     >
-      <button :class="`button ${upgrade.disabled ? 'disabled' : ''}`" @click="(buyUpgrade($event, index))">
+      <button :class="`btn btn-light btn-lg ${upgrade.disabled ? 'disabled' : ''}`" @click="(buyUpgrade($event, index))">
         <!--<i :class="upgrade.logo"></i>--> {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
       </button>
       <div class="details">
@@ -63,13 +63,14 @@ export default {
     .details {
       flex: 1 1 100%;
     }
-    .button {
-      appearance: none;
-      border: none;
-      outline: none;
-      background: none;
+    .btn {
       width: 100%;
       margin: 10px 0;
+
+      &:focus {
+        box-shadow: none;
+        background-color: #ecf0f1;
+      }
 
       &.disabled {
         color: #222;
