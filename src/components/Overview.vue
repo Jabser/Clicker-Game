@@ -1,17 +1,17 @@
 <template>
   <div class="overview">
-    <h3>Current Bytes</h3>
+    <h3>Current Gold</h3>
     <div class="bytes">
       {{ bytes }}
     </div>
     <div class="bps">
-      Bytes Per Second: {{ bps }}
+      Gold Per Second: {{ bps }}
     </div>
     <div class="level">
       Current Level: {{ level }}
     </div>
     <div class="next-level">
-      Bytes Until Next Level: {{ bytesUntilLevelUp }}
+      Gold Until Next Level: {{ bytesUntilLevelUp }}
     </div>
   </div>
 </template>
@@ -41,10 +41,11 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  color: #fff;
+  padding: 0 25px 25px 25px;
 
   h3 {
-    color: #222;
+    color: #fff;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -55,7 +56,8 @@ export default {
     min-width: 200px;
     max-width: fit-content;
     padding: 15px 25px;
-    background-color: #28A484;
+    background-color: #36393f;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 
     color: #fff;
@@ -69,11 +71,9 @@ export default {
   .level,
   .next-level {
     margin-bottom: 15px;
-
-    color: #222;
+    color: hsla(0,0%,100%,.6);
     font-size: 18px;
     font-weight: 500;
-    font-style: italic;
     text-align: center;
   }
 }

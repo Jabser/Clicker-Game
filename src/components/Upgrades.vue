@@ -9,7 +9,7 @@
         <!--<i :class="upgrade.logo"></i>--> {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
       </button>
       <div class="details">
-        <div class="cost">Cost: {{ upgrade.cost }}</div>
+        <div class="cost"><i class="fas fa-coins fa-fw"></i> Cost: {{ upgrade.cost }}</div>
         <div class="quantity">Quantity: {{ upgrade.quantity }}</div>
       </div>
     </div>
@@ -39,14 +39,15 @@ export default {
 
 <style lang="scss">
 .upgrades {
-  background-color: #222;
+  background-color: #36393f;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+  border-radius: .50rem;
   padding: 25px;
 
   .upgrade {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px -15px 15px;
 
     &:last-child {
       margin-bottom: 0;
@@ -67,20 +68,13 @@ export default {
       border: none;
       outline: none;
       background: none;
-      display: inline-block;
-      min-width: 400px;
-      padding: 15px 25px;
-      background-color: #28A484;
-      color: #FFF;
-      font-size: 20px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      cursor: pointer;
-      
+      width: 100%;
+      margin: 10px 0;
+
       &.disabled {
         color: #222;
-        background-color: #CCC;
+        background-color: #ccc;
+        border: 1px solid #ccc;
         pointer-events: none;
       }
     }

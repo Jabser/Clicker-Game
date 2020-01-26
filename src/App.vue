@@ -1,7 +1,15 @@
 <template>
   <div id="game">
-    <Overview />
-    <Upgrades />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <Upgrades />
+        </div>
+        <div class="col-md-6">
+          <Overview />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,11 +57,10 @@ export default {
 }
 
 body {
-  font-family: sans-serif;
+  background: #2f3136 !important;
 }
 
 #game {
-  width: 768px;
-  margin: 0 auto;
+  margin-top: 15vh;
 }
 </style>
