@@ -5,8 +5,8 @@
       :key="index" 
       class="upgrade"
     >
-      <button :class="`button ${upgrade.disabled ? 'disabled' : ''}`" @click="() => buyUpgrade(index)">
-        <i :class="upgrade.logo"></i> {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
+      <button :class="`button ${upgrade.disabled ? 'disabled' : ''}`" @click="(buyUpgrade($event, index))">
+        <!--<i :class="upgrade.logo"></i>--> {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
       </button>
       <div class="details">
         <div class="cost">Cost: {{ upgrade.cost }}</div>
@@ -25,11 +25,13 @@ export default {
     }
   },
   methods: {
-    buyUpgrade (index) {
-      this.$store.commit('buyUpgrade', {
-        index,
-        amount: 1
-      });
+    buyUpgrade (event, index) {
+      if (event.screenX > 0 ){
+        this.$store.commit('buyUpgrade', {
+          index,
+          amount: 1
+        });
+      }
     }
   }
 }
