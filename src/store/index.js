@@ -64,7 +64,7 @@ export default new Vuex.Store({
     upgrades: [
       {
         logo: "fas fa-shield-alt",
-        name: "Warrior",
+        name: "Pleb",
         cost: 50,
         increase: 1.15,
         bps: 2,
@@ -72,7 +72,7 @@ export default new Vuex.Store({
         unlocksAt: 0
       },
       {
-        name: "Axemen",
+        name: "Warrior",
         cost: 100,
         increase: 1.2,
         bps: 4,
@@ -112,7 +112,7 @@ export default new Vuex.Store({
         unlocksAt: 5
       },
       {
-        name: "Minor Fort",
+        name: "Fort",
         cost: 1600,
         increase: 1.4,
         bps: 70,
@@ -152,7 +152,7 @@ export default new Vuex.Store({
         state.upgrades[index].quantity += amount;
         state.upgrades[index].cost = Math.round(state.upgrades[index].cost * state.upgrades[index].increase);
       } else {
-        alert('You need more Bytes');
+        alert('You need more Gold');
       }
     },
     bytesPerSecond: state => {

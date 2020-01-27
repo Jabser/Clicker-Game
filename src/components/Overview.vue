@@ -1,6 +1,6 @@
 <template>
   <div class="overview">
-    <h3>Current Gold</h3>
+    <h3><i class="fas fa-coins fa-fw"></i> Current Gold</h3>
     <div class="bytes">
       {{ bytes }}
     </div>

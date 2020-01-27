@@ -66,6 +66,7 @@ export default {
     .btn {
       width: 100%;
       margin: 10px 0;
+      transition: .2s;
 
       &:focus {
         box-shadow: none;
