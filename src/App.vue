@@ -1,6 +1,10 @@
 <template>
   <div id="game">
     <div class="container">
+      <div class="header">
+        <img src="./assets/logo.png" class="img-fluid" alt="logo">
+        <h1>Clicker Game</h1>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <Upgrades />
@@ -61,6 +65,16 @@ body {
 }
 
 #game {
-  margin-top: 15vh;
+  margin-top: 5vh;
+
+  .header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
 }
 </style>
