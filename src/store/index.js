@@ -152,7 +152,11 @@ export default new Vuex.Store({
         state.upgrades[index].quantity += amount;
         state.upgrades[index].cost = Math.round(state.upgrades[index].cost * state.upgrades[index].increase);
       } else {
-        alert('You need more Gold');
+        Vue.toasted.show('<i class="fas fa-exclamation-circle"></i> You need more gold!', {
+          theme: "bubble",
+          position: "bottom-center",
+          duration: 5000
+        });
       }
     },
     bytesPerSecond: state => {
