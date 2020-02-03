@@ -3,13 +3,13 @@
     <div class="container">
       <div class="header">
         <img src="./assets/logo.png" class="img-fluid" alt="logo">
-        <h1>Clicker Game</h1>
+        <h1>Clicker Game<br><small class="text-muted">Instead of clicking you type</small></h1>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <Upgrades />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <Overview />
         </div>
       </div>
@@ -70,7 +70,11 @@ body {
   .header {
     text-align: center;
     color: #fff;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+
+    small {
+      font-size: 40%;
+    }
 
     img {
       margin-bottom: 20px;

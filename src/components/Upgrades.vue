@@ -9,8 +9,8 @@
         <!--<i :class="upgrade.logo"></i>--> {{ upgrade.name }} {{ upgrade.disabled ? `(lvl: ${upgrade.unlocksAt})` : '' }}
       </button>
       <div class="details">
-        <div class="cost"><i class="fas fa-coins fa-fw"></i> Cost: {{ upgrade.cost }}</div>
-        <div class="quantity">Quantity: {{ upgrade.quantity }}</div>
+        <div class="cost"><i class="fas fa-coins fa-fw"></i> Cost: <span>{{ upgrade.cost }}</span></div>
+        <div class="quantity">Quantity: <span>{{ upgrade.quantity }}</span></div>
       </div>
     </div>
   </div>
@@ -56,8 +56,14 @@ export default {
     .button,
     .cost,
     .quantity {
-      color: #FFF;
       margin: 0 15px;
+      color: #ccc;
+
+      span {
+        color: #fff;
+        margin-left: 5px;
+        font-weight: 900;
+      }
     }
 
     .details {

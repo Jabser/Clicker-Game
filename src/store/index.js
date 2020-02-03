@@ -8,58 +8,22 @@ export default new Vuex.Store({
     bytes: 0,
     totalBytes: 0,
 
-    // Bytes per second
+    // Gold per second
     bps: 0,
 
-    // Bytes per keypress
+    // Gold per keypress
     bpk: 1,
 
     player: {
       name: "",
       level: 0,
 
-      // Bytes needed for next level
+      // Gold needed for next level
       nextLevel: 100,
 
-      // After each level increase by 3 - EG: 3*100 = 300 so 200 bytes for next level
+      // After each level increase by 3 - EG: 3*100 = 300 so 200 gold for next level
       increase: 3
     },
-    power_ups: [],
-    // upgrades: [
-    //   {
-    //     name: "Intern",
-    //     cost: 50,
-    //     increase: 1.15,
-    //     bps: 0.1,
-    //     quantity: 0,
-    //     unlocksAt: 0
-    //   },
-    //   {
-    //     name: "Junior Developer",
-    //     cost: 100,
-    //     increase: 1.2,
-    //     bps: 0.5,
-    //     quantity: 0,
-    //     unlocksAt: 1
-    //   },
-    //   {
-    //     name: "Web Developer",
-    //     cost: 300,
-    //     increase: 1.4,
-    //     bps: 1,
-    //     quantity: 0,
-    //     unlocksAt: 2
-    //   },
-    //   {
-    //     name: "Senior Developer",
-    //     cost: 500,
-    //     increase: 1.4,
-    //     bps: 3,
-    //     quantity: 0,
-    //     unlocksAt: 3
-    //   }
-    // ],
-
     // Fantasy Theme
     upgrades: [
       {

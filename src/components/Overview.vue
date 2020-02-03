@@ -1,17 +1,16 @@
 <template>
   <div class="overview">
-    <h3><i class="fas fa-coins fa-fw"></i> Current Gold</h3>
     <div class="bytes">
-      {{ bytes }}
+      Current Gold <br><span>{{ bytes }}</span>
     </div>
     <div class="bps">
-      Gold Per Second: {{ bps }}
+      Gold Per Second: <br> <span>{{ bps }}</span>
     </div>
     <div class="level">
-      Current Level: {{ level }}
+      Current Level: <br> <span>{{ level }}</span>
     </div>
     <div class="next-level">
-      Gold Until Next Level: {{ bytesUntilLevelUp }}
+      Gold Until Next Level: <br> <span>{{ bytesUntilLevelUp }}</span>
     </div>
   </div>
 </template>
@@ -44,27 +43,24 @@ export default {
   color: #fff;
   padding: 0 25px 25px 25px;
 
-  h3 {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 15px;
-  }
-
   .bytes {
-    width: 100%;
-    min-width: 200px;
+    min-width: 230px;
     max-width: fit-content;
     padding: 15px 25px;
     background-color: #36393f;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-
-    color: #fff;
-    font-size: 60px;
-    font-weight: 900;
+    font-weight: 500;
+    font-size: 17px;
+    color: hsla(0,0%,100%,.6);
     text-align: center;
     margin-bottom: 30px;
+
+    span {
+      color: #fff;
+      font-size: 60px;
+      font-weight: 900;
+    }
   }
 
   .bps,
@@ -72,9 +68,21 @@ export default {
   .next-level {
     margin-bottom: 15px;
     color: hsla(0,0%,100%,.6);
-    font-size: 18px;
+    padding: 15px 25px;
+    background-color: #36393f;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-width: 230px;
+    font-size: 17px;
     font-weight: 500;
     text-align: center;
+
+    span {
+      color: #fff;
+      margin-left: 5px;
+      font-weight: 900;
+      font-size: 25px;
+    }
   }
 }
 </style>
