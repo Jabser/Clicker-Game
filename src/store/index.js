@@ -119,7 +119,7 @@ export default new Vuex.Store({
         Vue.toasted.show('<i class="fas fa-exclamation-circle"></i> You need more gold!', {
           theme: "bubble",
           position: "bottom-center",
-          duration: 5000
+          duration: 3000
         });
       }
     },
